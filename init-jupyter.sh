@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
 apt update
 
-dpkg -s python3 &> /dev/null
-
-if [ $? -eq 0 ]; then
-    echo "Package $1 is installed!"
-else
-    apt install python3
-fi
+apt install -y python3 python3-pip
 pip3 install jupyterlab-nvdashboard
 jupyter labextension install jupyterlab-nvdashboard
 echo ------------------

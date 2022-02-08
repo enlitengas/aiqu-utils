@@ -15,4 +15,4 @@ mkdir /run/sshd
 PATH=/usr/sbin/:$PATH
 useradd -G sudo -m -s /bin/bash $1
 echo "$1:$2" | chpasswd
-/usr/sbin/sshd -D
+/usr/sbin/sshd -D &
