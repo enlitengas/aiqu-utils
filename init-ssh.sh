@@ -10,7 +10,7 @@ then
     exit 1
 fi
 apt-get update -y
-apt-get install -y openssh-server sudo
+apt-get install -qy openssh-server sudo
 mkdir /run/sshd
 PATH=/usr/sbin/:$PATH
 useradd -G sudo -m -s /bin/bash $1
