@@ -11,4 +11,4 @@ echo ------------------
 nvidia-smi
 echo ------------------
 
-jupyter lab --ip 0.0.0.0 --NotebookApp.token='' --NotebookApp.password='' --port 8888 --allow-root --no-browser
+jupyter lab --ip 0.0.0.0 --NotebookApp.token='' --NotebookApp.password='' --port 8888 --allow-root --no-browser &
